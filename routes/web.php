@@ -80,3 +80,15 @@ Route::get('/role/view', 'RoleController@RoleView')->name('RoleView');
 Route::post('/role/add', 'RoleController@RolePost')->name('RolePost');
 Route::post('/permission/post', 'RoleController@PermissionPost')->name('PermissionPost');
 Route::post('/role-add-to-permission', 'RoleController@RoleAddToPermission')->name('RoleAddToPermission');
+
+// Front pages
+Route::get('/about-us', 'FrontEndController@Aboutus')->name('Aboutus');
+Route::get('/blog', 'FrontEndController@Blog')->name('Blog');
+Route::get('/single-blog', 'FrontEndController@SingleBlog')->name('SingleBlog');
+Route::get('/checkout', 'FrontEndController@Checkout')->name('Checkout');
+Route::get('/contact', 'FrontEndController@Contact')->name('Contact');
+Route::get('/faq', 'FrontEndController@Faq')->name('Faq');
+Route::get('/single_product', 'FrontEndController@ProductDetails')->name('ProductDetails');
+Route::get('/shop-page', 'FrontEndController@ShopPage')->name('ShopPage');
+Route::get('/shoping-cart', 'FrontEndController@ShoppingCart')->name('ShoppingCart');
+Route::get('/wishlist', 'FrontEndController@WhishList')->name('WhishList');

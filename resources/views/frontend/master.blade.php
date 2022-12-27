@@ -69,11 +69,11 @@
                             <li>
                                 <a href="javascript:void(0);"><i class="fa fa-user"></i> My Account <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown_style">
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="register.html">Register</a></li>
-                                    <li><a href="cart.html">Cart</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
-                                    <li><a href="wishlist.html">wishlist</a></li>
+                                    <li><a href="{{ url('login') }}">Login</a></li>
+                                    <li><a href="{{ url('register') }}">Register</a></li>
+                                    <li><a href="{{ route('ShoppingCart') }}">Cart</a></li>
+                                    <li><a href="{{ route('Checkout') }}">Checkout</a></li>
+                                    <li><a href="{{ route('WhishList') }}">wishlist</a></li>
                                 </ul>
                             </li>
                             <li><a href="{{ url('login') }}"> Login/Register </a></li>
@@ -87,7 +87,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-7 col-sm-6 col-6">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="{{ route('Front') }}">
                         <img src="assets/images/logo.png" alt="">
                         </a>
                         </div>
@@ -96,36 +96,36 @@
                         <nav class="mainmenu">
                             <ul class="d-flex">
                                 <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
+                                <li><a href="{{ route('Aboutus') }}">About</a></li>
                                 <li>
                                     <a href="javascript:void(0);">Shop <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown_style">
-                                        <li><a href="shop.html">Shop Page</a></li>
-                                        <li><a href="single-product.html">Product Details</a></li>
-                                        <li><a href="cart.html">Shopping cart</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
+                                        <li><a href="{{ route('ShopPage') }}">Shop Page</a></li>
+                                        <li><a href="{{ route('ProductDetails') }}">Product Details</a></li>
+                                        <li><a href="{{ route('ShoppingCart') }}">Shopping cart</a></li>
+                                        <li><a href="{{ route('Checkout') }}">Checkout</a></li>
+                                        <li><a href="{{ route('WhishList') }}">Wishlist</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);">Pages <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown_style">
-                                        <li><a href="about.html">About Page</a></li>
-                                        <li><a href="single-product.html">Product Details</a></li>
-                                        <li><a href="cart.html">Shopping cart</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="{{ route('Aboutus') }}">About Page</a></li>
+                                        <li><a href="{{ route('ProductDetails') }}">Product Details</a></li>
+                                        <li><a href="{{ route('ShoppingCart') }}">Shopping cart</a></li>
+                                        <li><a href="{{ route('Checkout') }}">Checkout</a></li>
+                                        <li><a href="{{ route('WhishList') }}">Wishlist</a></li>
+                                        <li><a href="{{ route('Faq') }}">FAQ</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);">Blog <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown_style">
-                                        <li><a href="blog.html">blog Page</a></li>
-                                        <li><a href="blog-details.html">blog Details</a></li>
+                                        <li><a href="{{ route('Blog') }}">blog Page</a></li>
+                                        <li><a href="{{ route('SingleBlog') }}">blog Details</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="{{ route('Contact') }}">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -159,7 +159,7 @@
                                     </li>
                                     <li>Subtotol: <span class="pull-right">$70.00</span></li>
                                     <li>
-                                        <button>Check Out</button>
+                                        <button> Check Out </button>
                                     </li>
                                 </ul>
                             </li>
@@ -225,7 +225,7 @@
                         <div class="col-12 d-block d-lg-none">
                             <ul class="metismenu">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
+                                <li><a href="{{ route('Aboutus') }}">About</a></li>
                                 <li class="sidemenu-items">
                                     <a class="has-arrow" aria-expanded="false" href="javascript:void(0);">Shop </a>
                                     <ul aria-expanded="false">
